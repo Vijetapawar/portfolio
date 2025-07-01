@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+                darkMode: 'class'
+                 }
+    </script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    
+        </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800 ">
+
+    <!-- Navbar -->
+    <nav class="bg-white p-6  flex justify-between items-center shadow ">
+        <h1 class="text-xl font-semibold uppercase">Vijeta Pawar</h1>
+
+        <ul class="flex gap-8">
+            <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-600">About</a></li>
+            <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+            <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+    </nav>
+ 
+    <!-- About Section -->
+    <section id="about" class="bg-white mt-4 p-6 rounded shadow max-w-2xl mx-auto ">
+        <div class="flex flex-col md:flex-row gap-10">
+            <div class="bg-gray-300 rounded-full w-28 h-28 flex-shrink-0"></div>
+            <div>
+                <h2 class="text-2xl font-semibold mt-6">About Me</h2>
+                <p class="mt-2">Hello I'm Vijeta! <br>
+                    I love frontend development and building beautiful, user-friendly websites.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+     <section id="pojects" class="bg-white mt-4 p-6 rounded shadow max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <div class="flex justify-between items-center border-b py-2">
+            <div>
+                <span>📁</span>
+                <span>To-Do App</span>
+            </div>
+            <a href="#" class="text-blue-600 hover:underline">Live Link</a>
+        </div>
+
+        <div class="flex justify-between items-center py-2">
+            <div class="flex items-center gap-2">
+                <span>📁</span>
+                <span>Gallery App</span>
+            </div>
+            <a href="#" class="text-blue-600 hover:underline">Github Link</a>
+        </div>
+     </section>
+    
+    <!-- Contact Section -->
+     <section id="contact" class="bg-white mt-4 p-6 rounded shadow max-w-2xl mx-auto ">
+        <h2 class="text-2xl font-bold mb-4">Contact</h2>
+        <form class="space-y-4">
+            <div class="mb-4 flex justify-between">
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" placeholder="Enter your name"
+                    class="w-full md:w-72 p-2 mt-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+               
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="text" placeholder="Enter your name"
+                        class="w-62 p-2 mt-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+            </div>
+            <label for="message">Message</label> <br>
+            <textarea name="message" placeholder="Typing..." rows="2" class=" w-full p-2 mt-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </form>
+        <button class="mt-4 bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
+     </section>
+        
+    <!-- Footer -->
+     <footer class="bg-white mt-4 p-6 rounded shadow max-w-2xl mx-auto flex justify-between gap-4">
+        <p>@ 2025 Vijeta</p>
+        <a href="#" class="flex intems-center gap-1 hover:text-black">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 1.6-.6 2-1.2.1-.7.4-1.1.7-1.3-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.2-.3-.6-1.5.1-3 0 0 1-.3 3.2 1.2a10.7 10.7 0 0 1 5.8 0c2.1-1.5 3.2-1.2 3.2-1.2.7 1.5.3 2.7.1 3 .8.9 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2v2.9c0 .3.2.7.8.6A12 12 0 0 0 12 .5z" />
+            </svg>
+            GitHub
+        </a>
+     </footer>
+</body>
+</html>
